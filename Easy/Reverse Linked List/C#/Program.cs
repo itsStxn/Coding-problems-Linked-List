@@ -1,8 +1,8 @@
 ﻿using Reverse_Linked_List;
 
 var task = new Solution();
-var node = new ListNode(0);
-node.Add(1)
+var node = new ListNode(0)
+.Add(1)
 .Add(2)
 .Add(3)
 .Add(4);
