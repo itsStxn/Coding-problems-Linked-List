@@ -7,5 +7,5 @@ var head = new ListNode(3)
 .Add(2).Add(0).Add(node);
 node.Add(head.next);
 
-var result = task.HasCycle(head);
+var result = task.HasCycleDisruptive(head);
 Console.WriteLine(result);

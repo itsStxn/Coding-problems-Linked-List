@@ -32,12 +32,18 @@ The number of the nodes in the list is in the range `[0, 104]`
 *Follow up: Can you solve it using O(1) (i.e. constant) memory?*
 
 ## Strategy
-Use Floyds Tortoise algorithm. Set a `fast` and `slow` pointers.
+### Floyds Tortoise algorithm
+Set a `fast` and `slow` pointers.
 
 `slow` moves by 1 node, `fast` moves by 2 nodes. Eventually, `fast` will be exactly equal to `slow` because they point to the same reference.
 
+### Disruptive approach
+Set a `curr` and `marker` pointers.
+
+`curr` moves forward, and every node found by it becomes `marker`. If `curr` finds `marker`, it means that it has already seen that node, thus running in a cycle. The method is not recommended because it alters `head`, making it lose all of its references.
+
 ## Time Complexity - O(n)
-Each node is processed either once at best and slightly more than once at worst.
+Each node is processed either once or slightly more than once at worst.
 
 ## Space Complexity - O(1)
 The variables only store pointers.
