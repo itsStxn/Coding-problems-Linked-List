@@ -34,7 +34,7 @@ public class ListNode {
 	private ListNode? curr = null;
 	private readonly string id = Guid.NewGuid().ToString();
 	
-	public ListNode(int val=0, ListNode? next =null) {
+	public ListNode(int val = 0, ListNode? next = null) {
 		this.val = val;
 		this.next = next;
 	}
