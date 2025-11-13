@@ -46,4 +46,4 @@ Set a `curr` and `marker` pointers.
 Each node is processed either once or slightly more than once at worst.
 
 ## Space Complexity - O(1)
-The variables only store pointers.
+No data structure variables with `n` size are used.

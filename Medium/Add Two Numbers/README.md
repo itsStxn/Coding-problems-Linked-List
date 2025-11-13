@@ -30,4 +30,4 @@ Move forward both `l1` and `l2` and sum their nodes. Use `carry` and sum it to n
 Each node is processed once.
 
 ## Space Complexity - O(1)
-Variables only store pointers, no dynamic size.
+No data structure variables with `n` size are used.

@@ -28,4 +28,4 @@ Override `head` so that it starts from a dummy value. Use pointers `slow` and `f
 Each node is processed once.
 
 ## Space Complexity - O(1)
-The variables only store pointers.
+No data structure variables with `n` size are used.

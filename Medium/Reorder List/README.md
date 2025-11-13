@@ -32,4 +32,4 @@ Finally, take `first` and `second` and merge them alternetively.
 All the loops process nodes once.
 
 ## Space Complexity - O(1)
-Variables only store pointers statically.
+No data structure variables with `n` size are used.

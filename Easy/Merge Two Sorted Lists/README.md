@@ -32,4 +32,4 @@ Update `curr` as `curr.next` to move through `merged`'s references without actua
 Each node is processed once.
 
 ## Space Complexity - O(1)
-The variables only store nodes with a reference.
+No data structure variables with `n` size are used.
