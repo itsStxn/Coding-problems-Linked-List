@@ -1,11 +1,7 @@
 ﻿using Reverse_Linked_List;
 
 var task = new Solution();
-var node = new ListNode(0)
-.Add(1)
-.Add(2)
-.Add(3)
-.Add(4);
+var node = new ListNode([0,1,2,3,4]);
 
 var result = task.ReverseList(node);
 Console.WriteLine($"iteratively: {result}");
