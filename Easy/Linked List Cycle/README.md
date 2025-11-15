@@ -25,8 +25,8 @@ Return true if there is a cycle in the linked list. Otherwise, return false.
 **Explanation**: There is no cycle in the linked list.
 
 ### Constraints
-The number of the nodes in the list is in the range `[0, 104]`  
--105 <= `Node.val` <= 105  
+The number of the nodes in the list is in the range `[0, 10^4]`  
+-105 <= `Node.val` <= 10^5  
 `pos` is -1 or a valid index in the linked-list.
 
 *Follow up: Can you solve it using O(1) (i.e. constant) memory?*
