@@ -24,7 +24,7 @@ The number of nodes in each linked list is in the range `[1, 100]`.
 It is guaranteed that the list represents a number that does not have leading zeros.
 
 ## Strategy
-Move forward both `l1` and `l2` and sum their nodes. Use `carry` and sum it to next nodes. Use a dummy pointer to store the result in its references, then return them as output.
+Use a `tot` node to store the sum. Move forward both `l1` and `l2` and store their sum as the next node in `tot`. Move to the next node of `tot` and divide it by 10 to get the carry. Update the value of the current node to its modulo 10. Repeat the operation until both `l1` and `l2` are null and there is no carry.
 
 ## Time Complexity - O(n)
 Each node is processed once.
