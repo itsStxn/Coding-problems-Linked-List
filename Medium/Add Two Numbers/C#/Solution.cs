@@ -4,22 +4,25 @@ namespace Add_Two_Numbers;
 
 public class Solution {
 	public ListNode AddTwoNumbers(ListNode? l1, ListNode? l2) {
-		ListNode res = new(), curr = res;
+		ListNode tot = new(), curr = tot;
 
-		int carry = 0;
-		while (l1 != null || l2 != null) {
-			int sum = carry + (l1?.val ?? 0) + (l2?.val ?? 0);
-			curr.next = new(sum % 10);
-			carry = sum / 10;
-
+		while (l1 != null || l2 != null || curr.val > 9) {
+			int n1 = 0, n2 = 0;
+			if (l1 != null) {
+				n1 = l1.val;
+				l1 = l1.next;
+			}
+			if (l2 != null) {
+				n2 = l2.val;
+				l2 = l2.next;
+			}
+			
+			int carry = curr.val / 10;
+			curr.val %= 10;
+			curr.next = new(carry + n1 + n2);
 			curr = curr.next;
-			l1 = l1?.next;
-			l2 = l2?.next;
 		}
 
-		if (carry > 0) 
-			curr.next = new(carry);
-
-		return res.next!;		
+		return tot.next!;		
 	}
 }
