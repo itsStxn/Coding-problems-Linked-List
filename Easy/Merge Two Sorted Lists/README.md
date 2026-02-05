@@ -19,9 +19,9 @@ Return the head of the merged linked list.
 **Output**: [0]
 
 ### Constraints
-The number of nodes in both lists is in the range `[0, 50]`.  
--100 <= `Node.val` <= 100  
-Both `list1` and `list2` are sorted in non-decreasing order.
+- The number of nodes in both lists is in the range `[0, 50]`.
+- -100 <= `Node.val` <= 100
+- Both `list1` and `list2` are sorted in non-decreasing order.
 
 ## Strategy
 Set a dummy linked list `merged` and store it in curr. Move through `list1` and `list2` by comparing nodes. If the node in `list1` is less than `list2`, store `list1` in `merged` by using `curr.next` and viceversa. 
