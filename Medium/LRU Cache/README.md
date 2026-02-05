@@ -32,10 +32,10 @@ lRUCache.get(4);    // return 4
 
 
 ### Constraints:
-1 <= `capacity` <= 3000  
-0 <= `key` <= 10^4  
-0 <= `value` <= 10^5  
-At most 2 * 105 calls will be made to get and put.
+- 1 <= `capacity` <= 3000
+- 0 <= `key` <= 10^4
+- 0 <= `value` <= 10^5
+- At most 2 * 10^5 calls will be made to get and put.
 
 ## Strategy
 Define a double linked list classe `Node`, and also define the attribut `Key` in it. In `LRU Cache`, define a dictionary that holds keys mapped to nodes. This structure allows to successfully define a `Get` and `Put` function that run adding, deleting and updating operations efficiently.
