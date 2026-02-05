@@ -16,10 +16,10 @@ Given the head of a linked list, remove the nth node from the end of the list an
 **Output**: [1]  
 
 ### Constraints
-The number of nodes in the list is `sz`.  
-1 <= `sz` <= 30  
-0 <= `Node.val` <= 100  
-1 <= `n` <= `sz`
+- The number of nodes in the list is `sz`.
+- 1 <= `sz` <= 30
+- 0 <= `Node.val` <= 100
+- 1 <= `n` <= `sz`
 
 ## Strategy
 Override `head` so that it starts from a dummy value. Use pointers `slow` and `fast`, and set n distance between them. Then increase them until `fast` is `null`, ad finally update the next reference of `slow` as the node that comes next the latter.
