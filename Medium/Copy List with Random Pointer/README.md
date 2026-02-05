@@ -28,9 +28,9 @@ Your code will **only** be given the `head` of the original linked list.
 **Output**: [[3,null],[3,0],[3,null]]  
 
 ### Constraints
-0 <= `n` <= 1000  
--10^4 <=` Node.val` <= 10^4  
-Node.random is `null` or is pointing to some node in the linked list.
+- 0 <= `n` <= 1000
+- -10^4 <=` Node.val` <= 10^4
+- `Node.random` is `null` or is pointing to some node in the linked list.
 
 ## Strategy
 ### With Dictionary
