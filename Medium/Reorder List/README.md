@@ -18,8 +18,8 @@ You may not modify the values in the list's nodes. Only nodes themselves may be 
 **Output**: [1,5,2,4,3]
 
 ### Constraints
-The number of nodes in the list is in the range `[1, 5 * 10^4]`.  
-1 <= `Node.val` <= 1000
+- The number of nodes in the list is in the range `[1, 5 * 10^4]`.
+- 1 <= `Node.val` <= 1000
 
 ## Strategy
 Use `slow` and `fast` pointers to split the list in 2 halves: make `slow` advance by 1 node and `fast` by 2. When `fast` reaches the end, `slow` will be the middle node.
