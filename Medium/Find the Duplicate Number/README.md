@@ -18,10 +18,10 @@ You must solve the problem **without** modifying the array `nums` and using only
 **Output**: 3  
 
 ### Constraints
-1 <= `n` <= 105  
-nums.length == `n + 1`  
-1 <= `nums[i]` <= `n`  
-All the integers in `nums` appear only once except for precisely one integer which appears **two or more** times.
+- 1 <= `n` <= 105
+- `nums.length` == `n + 1`
+- 1 <= `nums[i]` <= `n`
+- All the integers in `nums` appear only once except for precisely one integer which appears **two or more** times.
 
 ## Strategy
 Treat the array as a linked list where each value determines the next node. Detect a cycle usinf Floyd's Turtle algorithm, then reset the `slow` pointer to the first node, and start moving that and `fast` by 1 node at a time until they meet again. That meeting node is the duplicate.
