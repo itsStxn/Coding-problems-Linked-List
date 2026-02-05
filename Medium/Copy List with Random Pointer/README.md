@@ -24,7 +24,7 @@ Your code will **only** be given the `head` of the original linked list.
 **Output**: [[1,1],[2,1]]  
 
 ### Example 3
-**Input**: `head` = [[3,null],[3,0],[3,null]] 
+**Input**: `head` = [[3,null],[3,0],[3,null]]  
 **Output**: [[3,null],[3,0],[3,null]]  
 
 ### Constraints
