@@ -19,9 +19,9 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 **Output**: [8,9,9,9,0,0,0,1]  
 
 ### Constraints
-The number of nodes in each linked list is in the range `[1, 100]`.  
-0 <= `Node.val` <= 9  
-It is guaranteed that the list represents a number that does not have leading zeros.
+- The number of nodes in each linked list is in the range `[1, 100]`.
+- 0 <= `Node.val` <= 9
+- It is guaranteed that the list represents a number that does not have leading zeros.
 
 ## Strategy
 Use a `tot` node to store the sum. Move forward both `l1` and `l2` and store their sum as the next node in `tot`. Move to the next node of `tot` and divide it by 10 to get the carry. Update the value of the current node to its modulo 10. Repeat the operation until both `l1` and `l2` are null and there is no carry.
