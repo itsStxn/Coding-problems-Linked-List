@@ -3,11 +3,13 @@
 ## Difficulties
 
 ### Easy
+
 - Reverse Linked List
 - Merge Two Sorted Lists
 - Linked List Cycle
 
 ### Medium
+
 - Reorder List
 - Remove Nth Node From End of List
 - Copy List With Random Pointer
@@ -16,10 +18,12 @@
 - LRU Cache
 
 ### Hard
+
 - Merge K Sorted Lists
 - Reverse Nodes In K Group
 
 ## Patterns
+
 - Nodes connected by **next pointer**
 - No random access, only **sequential traversal**
 - Requires **pointer manipulation**
