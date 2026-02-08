@@ -3,7 +3,7 @@ using System;
 namespace Reverse_Linked_List;
 
 public class Solution {
-	public ListNode? ReverseList(ListNode head) {
+	virtual public ListNode? ReverseList(ListNode head) {
 		ListNode? prev = null, curr = head, next;
 
 		while (curr != null) {
@@ -14,14 +14,5 @@ public class Solution {
 		}
 
 		return prev;
-	}
-
-	public ListNode? ReverseListRecursively(ListNode? head, ListNode? prev = null) {
-		if (head == null) return prev;
-
-		ListNode? next = head.next;
-		head.next = prev;
-
-		return ReverseListRecursively(next, head);
 	}
 }
